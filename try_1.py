@@ -24,5 +24,5 @@ def run():
             q=[p[i]['label'] for i in range(len(p))]
             df = pd.DataFrame(list(zip(tweet_list, q)),columns =['Latest '+str(number_of_tweets)+' Tweets'+' on '+search_words, 'sentiment'])
             st.write(df)
-if __name__==’__main__’:
+if __name__=='__main__':
     run()        
